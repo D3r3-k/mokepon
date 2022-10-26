@@ -57,6 +57,10 @@ body{
 input{
     display: none;
 }
+input:checked + label{
+    background-color: #48864d;
+    border: 1px solid #ace9a6;
+}
 
 .seleccionar-mascota{
     background-color: transparent;
@@ -79,10 +83,11 @@ input{
 
 .caja-ataques{
     display: flex;
+    align-content: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
     width: 600px;
-    justify-content: center;
 }
 .caja-ataques button {
     background-color: transparent;
@@ -180,4 +185,13 @@ input{
     height: 50px;
     color: white;
     border: 1px solid white;
+}
+
+@media (max-width: 360px){
+    .tarjetas{
+        flex-direction: column;
+    }
+    .caja-ataques{
+        flex-direction: column;
+    }
 }
