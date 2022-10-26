@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mokepon</title>
-    <script src="./js/mokepons.js"></script>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -14,44 +13,7 @@
         
         <h2 class="subtitulo">Elige a tu mascota:</h2>
         
-        <div class="tarjetas">
-            <input type="radio" name="mascotas" id="hipoge" />
-            <label class="tarjeta-de-mokepon" for="hipoge">
-                <p>Hipoge</p>
-                <img src="assets/pk1.png" alt="Hipoge">
-            </label>
-            
-            <input type="radio" name="mascotas" id="capipepo" />
-            <label class="tarjeta-de-mokepon" for="capipepo">
-                <p>Capipepo</p>
-                <img src="assets/pk2.png" alt="Capipepo">
-            </label>
-            
-            <input type="radio" name="mascotas" id="ratigueya" />
-            <label class="tarjeta-de-mokepon" for="ratigueya">
-                <p>Ratigueya</p>
-                <img src="assets/pk3.png" alt="Ratigueya">
-            </label>
-            
-            <input type="radio" name="mascotas" id="langostelvis" />
-            <label class="tarjeta-de-mokepon" for="langostelvis">
-                <p>Langostelvis</p>
-                <img src="assets/pk4.png" alt="Langostelvis">
-            </label>
-            
-            <input type="radio" name="mascotas" id="tucalma" />
-            <label class="tarjeta-de-mokepon" for="tucalma">
-                <p>Tucalma</p>
-                <img src="assets/pk5.png" alt="Tucalma">
-            </label>
-            
-            <input type="radio" name="mascotas" id="pydos" />
-            <label class="tarjeta-de-mokepon" for="pydos">
-                <p>Pydos</p>
-                <img src="assets/pk6.png" alt="Pydos">
-            </label>
-        </div>
-        
+        <div id="contenedor-tarjetas" class="tarjetas"></div>
         <p>
             <button class="seleccionar-mascota" id="btn-mascota">Seleccionar</button>
         </p>
@@ -61,37 +23,31 @@
         <h1 class="titulo">MOKEPON 🔥💧🌱</h1>
         <h2 class="subtitulo">Elige tu ataque:</h2>
 
-        <div class="caja-ataques">
-            <button id="btn-fuego">🔥 Fuego 🔥</button>
-            <button id="btn-agua">💧 Agua 💧</button>
-            <button id="btn-tierra">🌱 Tierra 🌱</button>
-        </div>
+        <div class="caja-ataques" id="contenedorAtaques"></div>
+
+        <div class="res" id="resultado">Buena suerte</div>
 
         <div class="cajas-jugadores">
             <div class="bordes">
                 <h3>Jugador</h3>
-                <p class="vida"><span id="vida-jugador">3</span> ♥️</p>
-                <p class="nombre-mascota"><span id="mascota-jugador"></span></p>
+                <p class="vida" >🏆 <span id="vida-jugador">0</span></p>
+                <p class="nombre-mascota" id="mascota-jugador"></p>
                 <div class="ataque">Ataque: <span id="ataque-del-jugador"></span></div>
             </div>
             <div class="bordes">
                 <h3>Rival</h3>
-                <p class="vida"><span id="vida-rival">3</span> ♥️</p>
+                <p class="vida">🏆 <span id="vida-rival">0</span></p>
                 <p class="nombre-mascota"><span id="mascota-rival"></span></p>
                 <div class="ataque">Ataque: <span id="ataque-del-rival"></span></div>
             </div>
         </div>
-        <div class="res" id="resultado"></div>
     </section>
-
-
-    
     
     <!-- <section id="mensajes"></section> -->
 
     <section id="reiniciar">
         <button id="btn-reiniciar">Reiniciar</button>
     </section>
-
+    <script src="./js/mokepons.js"></script>
 </body>
 </html>
