@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+body{
+    background-color: #1F1D36;
+    font-family: 'Bangers';
+}
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 30px;
+    width: 400px;
+    height: 50px;
+    background-color: #3F3351;
+    border-radius: 25px 0 25px 0;
+}
+
+.subtitulo{
+    color: white;
+    font-size: 20px;
+}
+
+
+.tarjetas{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tarjeta-de-mokepon{
+    width: 200px;
+    height: 150px;
+    background: #864879;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #E9A6A6;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.tarjeta-de-mokepon img{
+    width: 85px;
+    height: 95px;
+}
+
+input{
+    display: none;
+}
+
+.seleccionar-mascota{
+    background-color: transparent;
+    color: white;
+    font-family: 'Bangers';
+    font-size: 22px;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #E9A6A6;
+    border-radius: 25px;
+    margin: 20px 0;
+}
+
+#seleccionar-ataque{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-ataques{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 600px;
+    justify-content: center;
+}
+.caja-ataques button {
+    background-color: transparent;
+    border: 1px solid #E9A6A6;
+    color: white;
+    width: 150px;
+    height: 35px;
+}
+
+.cajas-jugadores{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+.cajas-jugadores .bordes{
+    width: 250px;
+    border: 1px solid whitesmoke;
+    border-radius: 25px 0;
+}
+
+.cajas-jugadores h3{
+    color: #3F3351;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid whitesmoke;
+    border-radius: 23px 0;
+    margin: 0;
+}
+.vida{
+    color: red;
+    text-align: center;
+    font-size: 35px;
+    margin: 0;
+}
+.nombre-mascota {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+}
+.ataque{
+    color: #E9A6A6;
+    text-align: center;
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 23px;
+    border: 1px solid whitesmoke;
+    border-radius: 0 0 26px 0;
+    background-color: #3F3351;
+}
+
+.ataque span{
+    color: white;
+}
+
+#resultado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 0 0;
+    width: 250px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 0 30px;
+}
+
+.res{
+    background-color: aquamarine;
+}
+.victoria{
+    background-color: greenyellow;
+}
+.derrota{
+    background-color: lightcoral;
+}
+
+#reiniciar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+#reiniciar button{
+    background-color: #1F1D36;
+    font-size: 25px;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    color: white;
+    border: 1px solid white;
+}
