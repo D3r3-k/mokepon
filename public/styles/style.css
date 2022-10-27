@@ -204,6 +204,13 @@ input:checked + label{
     margin: 5px 5px;
 }
 
+.grid {
+    background-color: #48864d;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-gap: 10px;
+}
+
 @media (max-width: 560px){
     .tarjetas{
         flex-direction: column;
@@ -218,5 +225,6 @@ input:checked + label{
         display: flex;
         align-items: center;
         flex-direction: column;
+        user-select: none
     }
 }
