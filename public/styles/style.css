@@ -212,6 +212,9 @@ input:checked + label{
 }
 
 @media (max-width: 560px){
+    *{
+        user-select: none
+    }
     .tarjetas{
         flex-direction: column;
     }
@@ -221,10 +224,12 @@ input:checked + label{
 }
 
 @media (max-width: 360px){
+    *{
+        user-select: none
+    }
     #ver-mapa div{
         display: flex;
         align-items: center;
         flex-direction: column;
-        user-select: none
     }
 }
